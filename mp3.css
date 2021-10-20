@@ -1,0 +1,149 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./img/backkkkkk.jpg");
+    background-size: contain;
+}
+
+.player {
+    background: #eff3f5;
+    border-radius: 30px;
+    max-width: 480px;
+    width: 100%;
+    padding: 25px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 16px;
+    color: #4b056b;
+    text-align: center;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.song {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #4b056b;
+    text-align: center;
+}
+
+.progress__container {
+    background: #e4e9ed;
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+    margin-top: 63px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.progress {
+    background: #4b056b;
+    border-radius: 5px;
+    height: 6px;
+    
+}
+
+#play_btn {
+    height: 70px;
+    width: 70px;
+    background: #ff8a65;
+    z-index: 999;
+}
+
+#play_btn:hover {
+    background-color: aqua;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+button {
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: 0,5s;
+    background: #4b056b;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      -webkit-appearance: none;
+      background-color: #d2d0d3;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #e4e4e4;
+      margin-top: 0px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      background: #000000;
+      box-shadow: -80px 0 0 80px #4b056b;
+    }
+
+}
+
+.volume {
+    transform: rotate(270deg);
+    margin-left: 360px;
+    border-radius: 5px;
+    height: 6px;
+}
+
+.cover__img {
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 280px;
+}
+
+
+.mix__src {
+    width: 40px;
+    height: 40px;
+}
